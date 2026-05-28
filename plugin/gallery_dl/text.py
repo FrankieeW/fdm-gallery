@@ -40,6 +40,6 @@ def nameext_from_url(url, data):
         data['filename'] = name
         data['extension'] = ''
 
-def re(pattern, flags=0):
+def _re(pattern, flags=0):
     """Compile and return a regex pattern."""
-    return re_compile(pattern, flags)
+    return re.compile(pattern, flags)
