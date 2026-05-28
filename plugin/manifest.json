@@ -1,0 +1,22 @@
+{
+  "uuid": "fdm-gallery",
+  "name": "Gallery Downloader",
+  "description": "Download image galleries from various sites using gallery-dl",
+  "version": "1.0.0",
+  "icon": "icon.svg",
+  "mediaParser": true,
+  "mediaListParser": true,
+  "minApiVersion": 6,
+  "minFeaturesLevel": 3,
+  "targetApiVersion": 6,
+  "dependencies": {
+    "Python": {"minVersion": "3.8"}
+  },
+  "permissions": ["launchPython"],
+  "scripts": [
+    "tools.js",
+    "msgalleryparser.js",
+    "msbatchparser.js"
+  ],
+  "updateUrl": "https://example.com/fdm-gallery-update.json"
+}

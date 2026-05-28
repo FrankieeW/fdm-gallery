@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F0F9FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bgGrad)"/>
+
+  <!-- Gallery grid (2x2 image frames) -->
+  <g fill="none" stroke="#F0F9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <!-- Top-left frame -->
+    <rect x="26" y="28" width="32" height="32" rx="6"/>
+    <path d="M34 46 L42 38 L50 46"/>
+
+    <!-- Top-right frame -->
+    <rect x="70" y="28" width="32" height="32" rx="6"/>
+    <path d="M78 46 L86 38 L94 46"/>
+
+    <!-- Bottom-left frame -->
+    <rect x="26" y="66" width="32" height="32" rx="6"/>
+    <path d="M34 84 L42 76 L50 84"/>
+
+    <!-- Bottom-right frame -->
+    <rect x="70" y="66" width="32" height="32" rx="6"/>
+    <path d="M78 84 L86 76 L94 84"/>
+  </g>
+
+  <!-- Download arrow (center-bottom) -->
+  <path d="M64 68 L64 92 M54 82 L64 92 L74 82"
+        fill="none"
+        stroke="url(#arrowGrad)"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
